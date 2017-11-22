@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{084384F0-B623-4DDF-B1C9-4D863EF1BF68}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Amplifybaseline</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)\bin\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)\temp_files\$(Configuration)\</IntDir>
+    <IncludePath>$(SolutionDir)Dependencies\freetype\include;$(SolutionDir)Dependencies\SOIL\include;$(SolutionDir)Dependencies\GLFW\include;$(SolutionDir)Dependencies\GLEW\include;$(IncludePath);$(SolutionDir)Dependencies\GLM\include;$(SolutionDir)Dependencies\irrKlang\include</IncludePath>
+    <LibraryPath>$(SolutionDir)Dependencies\freetype;$(SolutionDir)Dependencies\SOIL\lib;$(SolutionDir)Dependencies\GLFW\lib-vc2013;$(SolutionDir)Dependencies\GLEW\lib;$(SolutionDir)Dependencies\irrKlang\libs;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)\bin\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)\temp_files\$(Configuration)\</IntDir>
+    <IncludePath>$(SolutionDir)Dependencies\freetype\include;$(SolutionDir)Dependencies\SOIL\include;$(SolutionDir)Dependencies\GLFW\include;$(SolutionDir)Dependencies\GLEW\include;$(IncludePath);$(SolutionDir)Dependencies\GLM\include;$(SolutionDir)Dependencies\irrKlang\include</IncludePath>
+    <LibraryPath>$(SolutionDir)Dependencies\freetype;$(SolutionDir)Dependencies\SOIL\lib;$(SolutionDir)Dependencies\GLFW\lib-vc2013;$(SolutionDir)Dependencies\GLEW\lib;$(SolutionDir)Dependencies\irrKlang\libs;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>GLEW_STATIC;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>freetype281.lib;glfw3.lib;glew32s.lib;opengl32.lib;soil.lib;irrKlang.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <BuildLog>
+      <Path>"G:\===Code===\scp-e-Amplify\Amplify\logs\$(Configuration)"</Path>
+    </BuildLog>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>GLEW_STATIC;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>freetype281.lib;glfw3.lib;glew32s.lib;opengl32.lib;soil.lib;irrKlang.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <BuildLog>
+      <Path>"G:\===Code===\scp-e-Amplify\Amplify\logs\$(Configuration)"</Path>
+    </BuildLog>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="private_libraries\game_objects\AI.cpp" />
+    <ClCompile Include="private_libraries\game_objects\background.cpp" />
+    <ClCompile Include="private_libraries\game_objects\GameObject.cpp" />
+    <ClCompile Include="private_libraries\game_objects\player.cpp" />
+    <ClCompile Include="private_libraries\game_objects\projectile.cpp" />
+    <ClCompile Include="private_libraries\game_objects\textobject.cpp" />
+    <ClCompile Include="private_libraries\graphics\buffers\buffer.cpp" />
+    <ClCompile Include="private_libraries\graphics\buffers\indexbuffer.cpp" />
+    <ClCompile Include="private_libraries\graphics\buffers\vertexarray.cpp" />
+    <ClCompile Include="private_libraries\graphics\shader.cpp" />
+    <ClCompile Include="private_libraries\utils\controls.cpp" />
+    <ClCompile Include="private_libraries\utils\controls_MP.cpp" />
+    <ClCompile Include="private_libraries\utils\controls_MVP.cpp" />
+    <ClCompile Include="private_libraries\window\window.cpp" />
+    <ClCompile Include="private_libraries\maths\mat4.cpp" />
+    <ClCompile Include="private_libraries\maths\vec2.cpp" />
+    <ClCompile Include="private_libraries\maths\vec3.cpp" />
+    <ClCompile Include="private_libraries\maths\vec4.cpp" />
+    <ClCompile Include="private_libraries\_Running\Input.cpp" />
+    <ClCompile Include="private_libraries\_Running\Layer.cpp" />
+    <ClCompile Include="private_libraries\_Running\Running.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="private_libraries\game_objects\AI.h" />
+    <ClInclude Include="private_libraries\game_objects\background.h" />
+    <ClInclude Include="private_libraries\game_objects\GameObject.h" />
+    <ClInclude Include="private_libraries\game_objects\player.h" />
+    <ClInclude Include="private_libraries\game_objects\projectile.h" />
+    <ClInclude Include="private_libraries\game_objects\textobject.h" />
+    <ClInclude Include="private_libraries\graphics\buffers\buffer.h" />
+    <ClInclude Include="private_libraries\graphics\buffers\indexbuffer.h" />
+    <ClInclude Include="private_libraries\graphics\buffers\vertexarray.h" />
+    <ClInclude Include="private_libraries\graphics\shader.h" />
+    <ClInclude Include="private_libraries\utils\controls.h" />
+    <ClInclude Include="private_libraries\utils\controls_MP.h" />
+    <ClInclude Include="private_libraries\utils\controls_MVP.h" />
+    <ClInclude Include="private_libraries\window\window.h" />
+    <ClInclude Include="private_libraries\maths\mat4.h" />
+    <ClInclude Include="private_libraries\maths\maths.h" />
+    <ClInclude Include="private_libraries\maths\maths_func.h" />
+    <ClInclude Include="private_libraries\maths\vec2.h" />
+    <ClInclude Include="private_libraries\maths\vec3.h" />
+    <ClInclude Include="private_libraries\maths\vec4.h" />
+    <ClInclude Include="private_libraries\utils\fileutils.h" />
+    <ClInclude Include="private_libraries\_Running\Input.h" />
+    <ClInclude Include="private_libraries\_Running\Layer.h" />
+    <ClInclude Include="private_libraries\_Running\Running.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="private_libraries\shaders\basic.frag" />
+    <None Include="private_libraries\shaders\basic.vert" />
+    <None Include="private_libraries\shaders\FTtext.frag" />
+    <None Include="private_libraries\shaders\FTtext.vert" />
+    <None Include="private_libraries\shaders\text.frag" />
+    <None Include="private_libraries\shaders\text.vert" />
+    <None Include="private_libraries\_Running\Levels.dat" />
+    <None Include="private_libraries\_Running\score.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="private_libraries\utils\shapes.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="private_libraries\textures\Cloud.png" />
+    <Image Include="private_libraries\textures\clouds_v1.png" />
+    <Image Include="private_libraries\textures\cloud_transparency.png" />
+    <Image Include="private_libraries\textures\hawk.PNG" />
+    <Image Include="private_libraries\textures\newshape.png" />
+    <Image Include="private_libraries\textures\projectile.png" />
+    <Image Include="private_libraries\textures\rocketship2cut.png" />
+    <Image Include="private_libraries\textures\shipshape3.png" />
+    <Image Include="private_libraries\textures\shipshapeblue.png" />
+    <Image Include="private_libraries\textures\shipshapeblue2.png" />
+    <Image Include="private_libraries\textures\shship.png" />
+    <Image Include="private_libraries\textures\SS1.png" />
+    <Image Include="private_libraries\textures\working.jpg" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="private_libraries\graphics\buffers\buffer.cpp" />
+    <ClCompile Include="private_libraries\graphics\buffers\indexbuffer.cpp" />
+    <ClCompile Include="private_libraries\graphics\buffers\vertexarray.cpp" />
+    <ClCompile Include="private_libraries\graphics\shader.cpp" />
+    <ClCompile Include="private_libraries\maths\mat4.cpp" />
+    <ClCompile Include="private_libraries\maths\vec2.cpp" />
+    <ClCompile Include="private_libraries\maths\vec3.cpp" />
+    <ClCompile Include="private_libraries\maths\vec4.cpp" />
+    <ClCompile Include="private_libraries\window\window.cpp" />
+    <ClCompile Include="private_libraries\utils\controls_MVP.cpp" />
+    <ClCompile Include="private_libraries\utils\controls_MP.cpp" />
+    <ClCompile Include="private_libraries\utils\controls.cpp" />
+    <ClCompile Include="private_libraries\game_objects\GameObject.cpp" />
+    <ClCompile Include="private_libraries\game_objects\player.cpp" />
+    <ClCompile Include="private_libraries\game_objects\AI.cpp" />
+    <ClCompile Include="private_libraries\game_objects\projectile.cpp" />
+    <ClCompile Include="private_libraries\_Running\Input.cpp" />
+    <ClCompile Include="private_libraries\_Running\Running.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="private_libraries\game_objects\background.cpp" />
+    <ClCompile Include="private_libraries\game_objects\textobject.cpp" />
+    <ClCompile Include="private_libraries\_Running\Layer.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="private_libraries\graphics\buffers\buffer.h" />
+    <ClInclude Include="private_libraries\graphics\buffers\indexbuffer.h" />
+    <ClInclude Include="private_libraries\graphics\buffers\vertexarray.h" />
+    <ClInclude Include="private_libraries\graphics\shader.h" />
+    <ClInclude Include="private_libraries\maths\mat4.h" />
+    <ClInclude Include="private_libraries\maths\maths.h" />
+    <ClInclude Include="private_libraries\maths\maths_func.h" />
+    <ClInclude Include="private_libraries\maths\vec2.h" />
+    <ClInclude Include="private_libraries\maths\vec3.h" />
+    <ClInclude Include="private_libraries\maths\vec4.h" />
+    <ClInclude Include="private_libraries\utils\fileutils.h" />
+    <ClInclude Include="private_libraries\window\window.h" />
+    <ClInclude Include="private_libraries\utils\controls_MVP.h" />
+    <ClInclude Include="private_libraries\utils\controls_MP.h" />
+    <ClInclude Include="private_libraries\utils\controls.h" />
+    <ClInclude Include="private_libraries\game_objects\GameObject.h" />
+    <ClInclude Include="private_libraries\game_objects\player.h" />
+    <ClInclude Include="private_libraries\game_objects\AI.h" />
+    <ClInclude Include="private_libraries\game_objects\projectile.h" />
+    <ClInclude Include="private_libraries\_Running\Input.h" />
+    <ClInclude Include="private_libraries\_Running\Running.h" />
+    <ClInclude Include="private_libraries\game_objects\background.h" />
+    <ClInclude Include="private_libraries\game_objects\textobject.h" />
+    <ClInclude Include="private_libraries\_Running\Layer.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="private_libraries\shaders\basic.frag" />
+    <None Include="private_libraries\shaders\basic.vert" />
+    <None Include="ClassDiagram.cd" />
+    <None Include="private_libraries\shaders\text.frag" />
+    <None Include="private_libraries\shaders\text.vert" />
+    <None Include="private_libraries\shaders\FTtext.vert" />
+    <None Include="private_libraries\shaders\FTtext.frag" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="private_libraries\_Running\Levels.dat" />
+    <None Include="private_libraries\_Running\score.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="private_libraries\utils\shapes.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="private_libraries\textures\Cloud.png" />
+    <Image Include="private_libraries\textures\cloud_transparency.png" />
+    <Image Include="private_libraries\textures\clouds_v1.png" />
+    <Image Include="private_libraries\textures\hawk.PNG" />
+    <Image Include="private_libraries\textures\newshape.png" />
+    <Image Include="private_libraries\textures\projectile.png" />
+    <Image Include="private_libraries\textures\rocketship2cut.png" />
+    <Image Include="private_libraries\textures\shipshape3.png" />
+    <Image Include="private_libraries\textures\shipshapeblue.png" />
+    <Image Include="private_libraries\textures\shipshapeblue2.png" />
+    <Image Include="private_libraries\textures\shship.png" />
+    <Image Include="private_libraries\textures\SS1.png" />
+    <Image Include="private_libraries\textures\working.jpg" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Erebos::graphics::AI" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQYAIAAAAAAAAAAAAAAAAQAAAAAAAQAMAAAAAAAAAAA=</HashCode>
+      <FileName>private_libraries\game_objects\AI.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Erebos::graphics::GameObject" Collapsed="true">
+    <Position X="2.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABYJYABgAIAQAgBgACEBAAEAEAghCwAAAAAEAAMEVAA=</HashCode>
+      <FileName>private_libraries\game_objects\GameObject.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Erebos::graphics::Player" Collapsed="true">
+    <Position X="2.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAIAAAAAAIAIAAAAAAAAAAAAAABAAAAAAAAQAAAAA=</HashCode>
+      <FileName>private_libraries\game_objects\player.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Erebos::graphics::Projectile" Collapsed="true">
+    <Position X="5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIBAAIAAAAAEAACAgAAAQEIAAgAARgQAOAAIAAAIAA=</HashCode>
+      <FileName>private_libraries\game_objects\projectile.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Erebos::graphics::Buffer" Collapsed="true">
+    <Position X="8" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAQAAIAAAAAAAAAgAAAAAAAAAAAAAAAAAAAQRAA=</HashCode>
+      <FileName>private_libraries\graphics\buffers\buffer.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Erebos::graphics::IndexBuffer" Collapsed="true">
+    <Position X="7.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAIAAAAAAAAAAEAABAAAAAAAAAAAQAAQEBAA=</HashCode>
+      <FileName>private_libraries\graphics\buffers\indexbuffer.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Erebos::graphics::VertexArray" Collapsed="true">
+    <Position X="7.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAIIAAAAAAAAAAAAAAAAAAAAAAACAAAEABBAA=</HashCode>
+      <FileName>private_libraries\graphics\buffers\vertexarray.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Erebos::graphics::Shader" Collapsed="true">
+    <Position X="12.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>RAAAAACBAIAAAABIAEAAABAAAAgAAACABBAAAAAAIAI=</HashCode>
+      <FileName>private_libraries\graphics\shader.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Erebos::graphics::Window" Collapsed="true">
+    <Position X="9" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>SEAAEAAAQAAAAAABAAVRAIAEAQAAYACAAIAACAAEAAA=</HashCode>
+      <FileName>private_libraries\window\window.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Erebos::graphics::Input" Collapsed="true">
+    <Position X="9.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAABAAAAAAAAAAAAAAAAEAAAAAAIAAAAAAAAAEA=</HashCode>
+      <FileName>private_libraries\_Running\Input.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Erebos::graphics::Running" Collapsed="true">
+    <Position X="8" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IQAAEEAACACAAAIggZAAAAEBACABAAAIgCAAgACgAAA=</HashCode>
+      <FileName>private_libraries\_Running\Running.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Controls_MP" Collapsed="true">
+    <Position X="9.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>GACCFABoAAWAwAQAAiAAIggAABMgBQAmAAQAgGmggAA=</HashCode>
+      <FileName>private_libraries\utils\controls_MP.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Controls_MVP" Collapsed="true">
+    <Position X="11.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAkkgAAAAAAAAAAIggCAAIQAQAoAAAAAAgggAA=</HashCode>
+      <FileName>private_libraries\utils\controls_MVP.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Erebos::FileUtils" Collapsed="true">
+    <Position X="13.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAA=</HashCode>
+      <FileName>private_libraries\utils\fileutils.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="Erebos::maths::mat4" Collapsed="true">
+    <Position X="7.25" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAIAAAEAAACAARACAQAAAAAAAAEAAABAAAA=</HashCode>
+      <FileName>private_libraries\maths\mat4.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Erebos::maths::vec2" Collapsed="true">
+    <Position X="9" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAEAAAAAAQAAAQAAAAAAAABgAIACAAA=</HashCode>
+      <FileName>private_libraries\maths\vec2.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Erebos::maths::vec3" Collapsed="true">
+    <Position X="10.75" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABAAEAAAAAAQAAAQAAAAAAAABgAYACAAA=</HashCode>
+      <FileName>private_libraries\maths\vec3.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Erebos::maths::vec4" Collapsed="true">
+    <Position X="12.5" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAEAAAAAAQAAAQAAAAAAAAhgAYACAAA=</HashCode>
+      <FileName>private_libraries\maths\vec4.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
